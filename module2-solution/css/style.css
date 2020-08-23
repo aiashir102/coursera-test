@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.page-title {
+    background-color: skyblue;
+}
+
+.maindiv {
+    background-color: bisque;
+    width: 100%;
+}
+
+.menudiv {
+    background-color: yellow;
+    width: 80%;
+    margin: auto;
+    padding: 1%;
+}
+
+.st1, .st2, .st3 {
+    width: 30%;
+    border: 2px solid black;
+    display: inline-block;
+    margin-right: -2px;
+    margin-top: -2px;
+    float: right;
+    text-align: center;
+}
+
+.st1 {
+    background-color: #ffa07d;
+}
+
+.st2 {
+    background-color: #a32913;
+    color: white;
+}
+
+.st3 {
+    background-color: #ffd6b3;
+}
+
+.menus {
+    background-color: grey;
+    border: 2px solid black;
+    margin-bottom: 1%;
+    
+}
+
+.menus p {
+    content: "";
+    clear: both;
+    display: table;
+    padding: 10px;
+}
+
+
+/* For Medium Screen only (768px to 991px*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .ms-6 {
+        width: 48%;
+        float: left;
+        height: 200px;
+        overflow: auto;
+    }
+    .ms-12 {
+        width: 98%;
+        float: left;
+    }
+
+    .ms-6, .ms-12{
+        margin: 1%;
+    }
+
+    .menudiv {
+        content:"";
+        clear:both;
+        display: table;
+    }
+}
+
+/* For Large Screen only (992px to  above*/
+
+@media (min-width: 992px) {
+    .ls-4 {
+        width: 31.33%;
+        float: left;
+        display: block;
+        margin: 1%;
+        height: 400px;
+        overflow: auto;
+    }
+    .menudiv {
+        width: 100%;
+        content:"";
+        clear:both;
+        display: table;
+    }
+}
